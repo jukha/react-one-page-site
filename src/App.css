@@ -75,6 +75,8 @@ select {
 
 
 /* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @font-face {
   font-family: 'Metropolis-Black';
   src: url('assets/fonts/Metropolis-Black.otf');
@@ -122,7 +124,9 @@ select {
   --text-light: #BEBEBE;
   --text-medium: #787893;
   --text-dark: #1E1E2A;
+  --gray-400: #343434;
   --gray-500: #363940;
+  --black-40: #999999;
   --neutral: #FFFFFF;
   --gradient-1-clr: var(--primary-clr-1);
   --gradient-2-clr: var(--primary-clr-2);
@@ -171,6 +175,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media (min-width:576px) {
   .section-card {
     border-radius: 48px;

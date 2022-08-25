@@ -2,6 +2,8 @@ import "./style.css";
 import PlayButton from "../assets/Play.svg";
 import AppStoreBtn from "../assets/app-store-btn.svg";
 import GooglePlayStoreBtn from "../assets/google-play-btn.svg";
+import AppStoreBtnWhite from "../assets/app-store-btn-white.svg";
+import GooglePlayStoreBtnWhite from "../assets/google-play-btn-white.svg";
 import IphoneImg from "../assets/Iphone.png";
 import IphoneImg2 from "../assets/Iphone2.png";
 import IphoneImg3 from "../assets/Iphone3.png";
@@ -14,10 +16,11 @@ import HowWorksBanner from "../assets/hero-banner.png";
 import HowWorksIcon1 from "../assets/how-it-works-col-1.svg";
 import HowWorksIcon2 from "../assets/how-it-works-col-2.svg";
 import HowWorksIcon3 from "../assets/how-it-works-col-3.svg";
+import DiscoverImg from "../assets/discover.png";
 
 const Home = () => {
   return (
-    <section class="home">
+    <section className="home">
       {/*==========================
          ====== Hero Section ====== 
          ========================== */}
@@ -42,7 +45,7 @@ const Home = () => {
          ================================ */}
       <section className=" mb-4 feature-section section-card position-relative">
         <div className="fr-container">
-          <img src={GlobeIcon} class="feature-icon" alt="globe icon" />
+          <img src={GlobeIcon} className="feature-icon" alt="globe icon" />
           <h2 className="section-header">
             Your network can work harder,{" "}
             <span className="gradient-text">automate</span> it!
@@ -61,7 +64,7 @@ const Home = () => {
          ================================ */}
       <section className=" mb-4 feature-section section-card position-relative">
         <div className="fr-container">
-          <img src={ChatIcon} class="feature-icon" alt="globe icon" />
+          <img src={ChatIcon} className="feature-icon" alt="globe icon" />
           <h2 className="section-header text-end">
             Strong warm <br className="d-block d-sm-none" />
             <span className="gradient-text">introductions</span>
@@ -86,7 +89,7 @@ const Home = () => {
          ================================ */}
       <section className="mb-4 feature-section section-card position-relative text-center">
         <div className="fr-container">
-          <img src={UserGroupIcon} class="feature-icon" alt="globe icon" />
+          <img src={UserGroupIcon} className="feature-icon" alt="globe icon" />
           <h2 className="section-header">
             From your
             <span className="gradient-text">Fryends,</span>
@@ -110,11 +113,10 @@ const Home = () => {
          ================================ */}
       <section className="mb-4 feature-section section-card position-relative">
         <div className="fr-container">
-          <img src={GlobeIcon} class="feature-icon" alt="globe icon" />
-          <h2 className="section-header">
-            No
-            <span className="gradient-text">connection</span>
-            needed to any of your social accounts...
+          <img src={GlobeIcon} className="feature-icon" alt="globe icon" />
+          <h2 className="section-header social-feature-header">
+            No <span className="gradient-text">connection</span> needed to any
+            of your social accounts...
           </h2>
           <div className="feature-img">
             <img src={SocialIconGroup} />
@@ -169,13 +171,121 @@ const Home = () => {
       {/*==========================
          ====== Faqs Section ====== 
          ========================== */}
-      <section className=" mb-4 feature-section section-card position-relative">
-        <div className="fr-container">
-          <img src={GlobeIcon} class="feature-icon" alt="globe icon" />
-          <h2 className="section-header">
+      <section className=" mb-4 feature-section section-card position-relative faq-section">
+        <div className="fr-container px-0">
+          <h2 className="section-header mb-3">
             Frequently <br className="d-block d-md-none" />
             <span className="gradient-text">asked..</span>
           </h2>
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Can you let me know how this fryends app work?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How can I send friend request on fryends app?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Is this a paid or free app?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*==============================================
+         ====== Section with Gradient Background ====== 
+         ============================================== */}
+      <section className="gradient-section pt-5 pb-0">
+        <div className="fr-container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="apps-links d-flex justify-content-center mt-0 mb-4">
+                <img
+                  src={AppStoreBtnWhite}
+                  alt="app store btn"
+                  className="me-3"
+                />
+                <img
+                  src={GooglePlayStoreBtnWhite}
+                  alt="google play store btn"
+                />
+              </div>
+              <h2 className="section-header text-white m-auto mb-4">
+                Discover even <br />
+                <span className="gradient-text">more</span>
+              </h2>
+            </div>
+            <div className="col-md-6">
+              <img src={DiscoverImg} />
+            </div>
+          </div>
         </div>
       </section>
     </section>

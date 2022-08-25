@@ -1,0 +1,84 @@
+footer {
+    padding: 30px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-tagline {
+    font-family: 'Metropolis-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.signup-box h4 {
+    font-family: 'Metropolis-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 43px;
+    color: var(--gray-400);
+    text-align: center;
+}
+
+.signup-box p {
+    font-family: 'Metropolis-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--black-40);
+}
+
+.copyright {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #CCCCCC;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form input:focus {
+    outline: none;
+}
+
+.subscribe-form .form-control {
+    position: relative;
+    min-height: 65px;
+}
+
+.subscribe-form ::placeholder {
+    font-family: 'Metropolis-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 67px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.subscribe-form input[type="submit"] {
+    max-width: 140px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+
+.subscribe-form>* {
+    min-width: 0;
+    flex: 1;
+}
