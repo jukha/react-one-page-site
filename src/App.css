@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+}
+
+
+/* ===== Fonts ===== */
+@font-face {
+  font-family: 'Metropolis-Black';
+  src: url('assets/fonts/Metropolis-Black.otf');
+}
+
+@font-face {
+  font-family: "Metropolis-SemiBold";
+  src: url('assets/fonts/Metropolis-SemiBold.otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-Bold';
+  src: url('assets/fonts/Metropolis-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-ExtraBold';
+  src: url('assets/fonts/Metropolis-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-Black';
+  src: url('assets/fonts/Metropolis-Black.otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-Medium';
+  src: url('assets/fonts/Metropolis-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-Regular';
+  src: url('assets/fonts/Metropolis-Regular.otf');
+}
+
+
+:root {
+  --primary-clr-1: #DE5F28;
+  --primary-clr-2: #1E1E2A;
+  --body-clr: #FDF7F5;
+  --text-light: #BEBEBE;
+  --text-medium: #787893;
+  --text-dark: #1E1E2A;
+  --gray-500: #36394;
+  --neutral: #FFFFFF;
+  --gradient-1-clr: var(--primary-clr-1);
+  --gradient-2-clr: var(--primary-clr-2);
+
+
+}
+
+body {
+  font-family: 'MeMetropolis-Regular';
+  background-color: var(--body-clr);
+}
+
+/* ===== Helping Classes ===== */
+.fr-container {
+  max-width: 1290px;
+  width: 100%;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-family: 'Metropolis-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--neutral);
+  background-color: var(--primary-clr-1);
+}
+
+.section-card {
+  background: var(--neutral);
+  border-radius: 48px;
+  padding: 90px 20px 0;
+}
+
+.gradient-text {
+  /* background: -webkit-linear-gradient(to right, var(--gradient-1-clr, var(--gradient-2-clr))); */
+  background: linear-gradient(to right, var(--gradient-1-clr) 100%, var(--gradient-2-clr) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
 }
