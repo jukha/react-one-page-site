@@ -110,6 +110,10 @@ select {
   src: url('assets/fonts/Metropolis-Regular.otf');
 }
 
+@font-face {
+  font-family: 'Metropolis-Thin';
+  src: url('assets/fonts/Metropolis-Thin.otf');
+}
 
 :root {
   --primary-clr-1: #DE5F28;
@@ -118,7 +122,7 @@ select {
   --text-light: #BEBEBE;
   --text-medium: #787893;
   --text-dark: #1E1E2A;
-  --gray-500: #36394;
+  --gray-500: #363940;
   --neutral: #FFFFFF;
   --gradient-1-clr: var(--primary-clr-1);
   --gradient-2-clr: var(--primary-clr-2);
@@ -157,7 +161,7 @@ body {
 
 .section-card {
   background: var(--neutral);
-  border-radius: 48px;
+  border-radius: 0px;
   padding: 90px 20px 0;
 }
 
@@ -166,6 +170,9 @@ body {
   background: linear-gradient(to right, var(--gradient-1-clr) 100%, var(--gradient-2-clr) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
+}
+@media (min-width:576px) {
+  .section-card {
+    border-radius: 48px;
+  }
 }

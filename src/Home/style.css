@@ -1,3 +1,7 @@
+/* ========================== */
+/* ====== Hero Section ====== */
+/* ========================== */
+
 .hero {
     padding: 140px 0 55px;
 
@@ -56,6 +60,16 @@
 
 }
 
+
+/* ============================= */
+/* ====== Feature Section ====== */
+/* ============================ */
+.feature-icon {
+    position: absolute;
+    top: 37px;
+    right: 32px;
+}
+
 .section-header {
     font-family: 'Metropolis-SemiBold';
     font-style: normal;
@@ -66,4 +80,87 @@
     color: var(--text-dark);
 }
 
-.section-text {}
+.section-text {
+    font-family: 'Metropolis-Thin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -5px;
+    color: var(--text-light);
+    margin: 30px 0;
+}
+
+.feature-btn {
+    text-decoration: none;
+    font-family: 'Metropolis-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #5D5FEF;
+}
+
+.feature-img {
+    margin-top: 60px;
+}
+
+.mobile-only {
+    /* padding: 0 20px; */
+}
+
+.gradient-section {
+    padding: 70px 20px;
+    background: linear-gradient(109.8deg, #FCBD99 19.35%, #F1E1C2 90.5%);
+    box-shadow: 0px 32px 20px rgba(206, 212, 222, 0.12),
+        1px 8px 24px rgba(206, 212, 222, 0.16);
+}
+
+/* ================================== */
+/* ====== How it works Section ====== */
+/* ================================== */
+.how-it-works {
+    padding-top: 60px;
+}
+
+.how-it-works h2 {
+    font-family: 'Metropolis-ExtraBold';
+}
+
+.how-it-works__banner {
+    background: url(../assets/hero-banner.png);
+    min-height: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.how-it-works__col {
+    margin-bottom: 50px;
+}
+
+.how-it-works__col h3 {
+    font-family: 'Metropolis-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--gray-500);
+    margin: 15px 0;
+}
+
+.how-it-works__col p {
+    max-width: 230px;
+    margin: auto;
+    font-family: 'Metropolis-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
