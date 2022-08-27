@@ -180,4 +180,10 @@ body {
   .section-card {
     border-radius: 48px;
   }
+
+  .section-card,
+  .fr-container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }

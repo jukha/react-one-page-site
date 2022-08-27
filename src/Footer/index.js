@@ -9,7 +9,7 @@ import YtIcon from "../assets/youtube.svg";
 const Footer = () => {
   return (
     <footer>
-      <div className="fr-container">
+      <div className="fr-container px-sm-0">
         <div className="row">
           <div className="col-md-6">
             <img src={logo} className="m-auto" alt="logo" />
