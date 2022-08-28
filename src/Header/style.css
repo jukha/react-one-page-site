@@ -7,8 +7,16 @@
 }
 
 .navbar {
-    background-color: transparent !important;
     margin-top: 34px;
+    position: sticky;
+    top: -1px;
+    background-color: #fdf7f5 !important;
+    z-index: 99999;
+    padding: 20px 0;
+}
+
+.logo {
+    max-width: 120px;
 }
 
 .navbar-brand {
@@ -27,4 +35,11 @@
     text-align: center;
     padding: 0;
     color: var(--secondary-clr-1);
+}
+
+@media (min-width:768px) {
+    .logo {
+        max-width: max-content;
+    }
+    
 }

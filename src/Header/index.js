@@ -10,7 +10,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid fr-container justify-content-between align-items-center">
         <a className="navbar-brand">
-          <img src={logo} alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
         </a>
         <button
           className="navbar-toggler"

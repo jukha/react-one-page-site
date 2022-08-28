@@ -17,7 +17,7 @@
     line-height: 32px;
     text-align: center;
     letter-spacing: -3px;
-    color: var(--secondary-clr-1);
+    color: var(--text-medium);
     margin-bottom: 12px;
 }
 
@@ -106,6 +106,15 @@
     margin-top: 60px;
 }
 
+.feature-img.clipped {
+    /* max-height: 285px; */
+    height: 384px;
+    background: url('../assets/Iphone.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
 .mobile-only {
     padding: 0 20px;
 }
@@ -121,11 +130,17 @@
     max-width: 355px;
 }
 
+.gradient-section .section-header {
+    font-size: 48px;
+    line-height: 48px;
+}
+
 /* ================================== */
 /* ====== How it works Section ====== */
 /* ================================== */
 .how-it-works {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .how-it-works h2 {
@@ -133,13 +148,40 @@
 }
 
 .how-it-works__banner {
-    background: url(../assets/hero-banner.png);
+    background: url(../assets/how-it-works-banner.svg);
     min-height: 429px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+.how-it-works__banner .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.how-it-works__banner .text {
+    max-width: 317px;
+    margin-top: 36px;
+    font-family: 'Metropolis-SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.227273px;
+    color: #FFFFFF;
+}
+
+.how-it-works__banner .text span {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .how-it-works__col {
@@ -226,4 +268,97 @@
     color: var(--black-40);
     padding: 20px 0 20px 21px;
     max-width: 323px;
+}
+
+
+/* =========================
+   ====== Media Queries ==== 
+   ========================= */
+
+
+@media(min-width:768px) {
+    .hero p {
+        font-size: 56px;
+        max-width: 490px;
+        line-height: 63px;
+    }
+
+    .hero h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .apps-links img {
+        max-width: max-content;
+    }
+
+    .section-header {
+        font-size: 64px;
+        line-height: 72px;
+    }
+
+    .section-text {
+        font-size: 64px;
+        line-height: 64px;
+        margin: 10px 0 30px;
+    }
+
+    .feature-icon {
+        top: 47px;
+        right: 50px;
+    }
+
+    .feature-img.clipped {
+        height: 500px;
+        width: 76%;
+        background-size: 100% 100%;
+    }
+
+    .gradient-section .sectio-header {
+        font-size: 56px;
+        line-height: 56pxh;
+    }
+}
+
+@media (min-width:992px) {
+    .gradient-section {
+        padding: 61px 52px;
+        border-radius: 48px;
+    }
+
+    .desktop-only {
+        width: 72%;
+    }
+
+    .social-feature-header {
+        max-width: 650px;
+    }
+
+    .social-text .section-text {
+        max-width: 635px;
+        text-align: start !important;
+    }
+
+    .how-it-works__banner,
+    .how-it-works__banner .overlay {
+        border-radius: 48px;
+    }
+
+    .how-it-works__banner {
+        margin-bottom: 100px;
+    }
+
+    .how-it-works__banner .text {
+        margin-top: 20px;
+        max-width: 415px;
+    }
+
+    .faq-section .accordion-button {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .faq-section .accordion-body {
+        max-width: 800px;
+    }
 }

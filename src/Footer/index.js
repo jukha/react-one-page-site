@@ -10,9 +10,9 @@ const Footer = () => {
   return (
     <footer>
       <div className="fr-container px-sm-0">
-        <div className="row">
-          <div className="col-md-6">
-            <img src={logo} className="m-auto" alt="logo" />
+        <div className="row justify-content-between">
+          <div className="col-md-6 d-flex flex-column align-items-center align-items-lg-start">
+            <img src={logo} className="logo" alt="logo" />
             <p className="my-4 footer-tagline">
               The best referrals are from "Word of Mouth.” We automated it!
             </p>
@@ -23,8 +23,11 @@ const Footer = () => {
               <img src={LinkedinIcon} alt="linkedin icon" />
               <img src={YtIcon} alt="youtube icon" />
             </div>
+            <p className="copyright cr-desktop d-none d-lg-block">
+              © All Right Reserved by Fryends
+            </p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-4">
             <div className="signup-box py-3 my-3">
               <h4>Already 10,000+ ahead of you!</h4>
               <p>
@@ -42,7 +45,9 @@ const Footer = () => {
                 <input type="submit" className="btn" value="Subscribe" />
               </div>
             </form>
-            <p className="copyright">© All Right Reserved by Fryends</p>
+            <p className="copyright cr-mobile d-block d-lg-none">
+              © All Right Reserved by Fryends
+            </p>
           </div>
         </div>
       </div>
