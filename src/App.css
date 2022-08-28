@@ -152,7 +152,11 @@ body {
   gap: 32px;
 }
 
-.btn {
+.cp {
+  cursor: pointer;
+}
+
+.button {
   display: inline-block;
   padding: 12px 32px;
   font-family: 'Metropolis-Regular';
@@ -160,8 +164,10 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  color: var(--neutral);
+  color: var(--neutral) !important;
   background-color: var(--primary-clr-1);
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .section-card {

@@ -37,14 +37,17 @@
     color: var(--secondary-clr-1);
 }
 
-.active {
+.active:not(.button) {
     font-family: 'Metropolis-Bold';
     font-size: 18px;
     color: var(--primary-clr-1) !important;
     font-weight: 800 !important;
 }
 
-@media (min-width:768px) {
+/* .active:not(.button){
+    color: #fff;
+} */
+ @media (min-width:768px) {
     .navbar {
         /* margin-top: 34px; */
         padding: 34px 0;

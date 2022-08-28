@@ -8,8 +8,8 @@ import YtIcon from "../assets/youtube.svg";
 
 const Footer = () => {
   return (
-    <footer className="position-relative" data-bs-spy="scroll">
-      <div className="fr-container px-sm-0" id="contact">
+    <footer id="contact">
+      <div className="fr-container px-sm-0">
         <div className="row justify-content-between">
           <div className="col-md-6 d-flex flex-column align-items-center align-items-lg-start">
             <img src={logo} className="logo" alt="logo" />

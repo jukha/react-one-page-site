@@ -1,5 +1,7 @@
 import "./style.css";
 
+import Footer from "../Footer";
+
 // Assets
 import PlayButton from "../assets/Play.svg";
 import AppStoreBtn from "../assets/app-store-btn.svg";
@@ -69,7 +71,7 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <div id="the-tech">
+      <div id="theTech">
         {/*================================
          ====== Feature Section 01 ====== 
          ================================ */}
@@ -246,35 +248,37 @@ const Home = () => {
               </h3>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-4">
-              <div className="how-it-works__col">
-                <img src={HowWorksIcon1} className="m-auto" />
-                <h3>Auto-Referrals</h3>
-                <p>
-                  Fryends constantly scours your network looking for jobs that
-                  match your skills.
-                </p>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="how-it-works__col">
+                  <img src={HowWorksIcon1} className="m-auto" />
+                  <h3>Auto-Referrals</h3>
+                  <p>
+                    Fryends constantly scours your network looking for jobs that
+                    match your skills.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="how-it-works__col">
-                <img src={HowWorksIcon2} className="m-auto" />
-                <h3>Leads</h3>
-                <p>
-                  The system then notifies you of all potential jobs and clients
-                  that match you.
-                </p>
+              <div className="col-md-4">
+                <div className="how-it-works__col">
+                  <img src={HowWorksIcon2} className="m-auto" />
+                  <h3>Leads</h3>
+                  <p>
+                    The system then notifies you of all potential jobs and
+                    clients that match you.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="how-it-works__col">
-                <img src={HowWorksIcon3} className="m-auto" />
-                <h3>Introductions</h3>
-                <p>
-                  Your mutual fryend will proceed to make the proper
-                  introductions in a new three-way chatroom.
-                </p>
+              <div className="col-md-4">
+                <div className="how-it-works__col">
+                  <img src={HowWorksIcon3} className="m-auto" />
+                  <h3>Introductions</h3>
+                  <p>
+                    Your mutual fryend will proceed to make the proper
+                    introductions in a new three-way chatroom.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -406,6 +410,7 @@ const Home = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </section>
   );
 };
