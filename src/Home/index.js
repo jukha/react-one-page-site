@@ -233,7 +233,7 @@ const Home = () => {
         {/*================================
          ====== How it works Section ====== 
          ================================ */}
-        <section className="how-it-works fr-container section-card bg-transparent px-lg-0">
+        <section className="how-it-works fr-container section-card bg-transparent px-0">
           <h2 className="section-header text-center mb-3 mb-lg-5">
             How it works
           </h2>
