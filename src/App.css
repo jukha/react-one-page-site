@@ -137,6 +137,7 @@ select {
 body {
   font-family: 'MeMetropolis-Regular';
   background-color: var(--body-clr);
+  scroll-behavior: smooth;
 }
 
 /* ===== Helping Classes ===== */

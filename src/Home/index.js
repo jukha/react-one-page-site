@@ -42,10 +42,17 @@ const Home = () => {
           </a>
         </div>
         <div className="apps-links d-flex justify-content-center">
-          <a href="#" target="_blank">
+          <a
+            href="https://apps.apple.com/us/app/fryends/id1451445801"
+            target="_blank"
+          >
             <img src={AppStoreBtn} alt="app store btn" className="me-3" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.fryend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={GooglePlayStoreBtn} alt="google play store btn" />
           </a>
         </div>
@@ -304,15 +311,25 @@ const Home = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="apps-links d-flex justify-content-center justify-content-lg-start mt-0 mb-4">
-                <img
-                  src={AppStoreBtnWhite}
-                  alt="app store btn"
-                  className="me-3"
-                />
-                <img
-                  src={GooglePlayStoreBtnWhite}
-                  alt="google play store btn"
-                />
+                <a
+                  href="https://apps.apple.com/us/app/fryends/id1451445801"
+                  target="_blank"
+                >
+                  <img
+                    src={AppStoreBtnWhite}
+                    alt="app store btn"
+                    className="me-3"
+                  />
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.fryend"
+                  target="_blank"
+                >
+                  <img
+                    src={GooglePlayStoreBtnWhite}
+                    alt="google play store btn"
+                  />
+                </a>
               </div>
               <h2 className="section-header text-white m-auto mb-4">
                 Discover even <br />

@@ -7,7 +7,6 @@
 }
 
 .navbar {
-    margin-top: 34px;
     position: sticky;
     top: -1px;
     background-color: #fdf7f5 !important;
@@ -45,6 +44,10 @@
 }
 
 @media (min-width:768px) {
+    .navbar {
+        margin-top: 34px;
+    }
+
     .logo {
         max-width: max-content;
     }
