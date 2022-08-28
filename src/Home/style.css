@@ -112,6 +112,7 @@
     background: url('../assets/Iphone.svg');
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 100% 150%;
 
 }
 
@@ -164,7 +165,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .75);
 }
 
 .how-it-works__banner .text {
@@ -321,6 +322,10 @@
 }
 
 @media (min-width:992px) {
+    .hero {
+        padding-top: 200px;
+    }
+
     .gradient-section {
         padding: 61px 52px;
         border-radius: 48px;
@@ -360,6 +365,14 @@
 
     .faq-section .accordion-body {
         max-width: 800px;
+    }
+
+    .accordion-button {
+        border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+    }
+
+    .accordion-button:focus {
+        border-color: rgba(153, 153, 153, 0.2);
     }
 
     .accordion-button::before {

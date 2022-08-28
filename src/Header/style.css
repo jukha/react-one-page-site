@@ -7,8 +7,8 @@
 }
 
 .navbar {
-    position: sticky;
-    top: -1px;
+    /* position: sticky;
+    top: -1px; */
     background-color: #fdf7f5 !important;
     z-index: 99999;
     padding: 20px 0;
@@ -24,6 +24,7 @@
 
 .navbar-nav {
     gap: 32px;
+    margin-top: 40px;
 }
 
 .nav-link {
@@ -45,7 +46,8 @@
 
 @media (min-width:768px) {
     .navbar {
-        margin-top: 34px;
+        /* margin-top: 34px; */
+        padding: 34px 0;
     }
 
     .logo {

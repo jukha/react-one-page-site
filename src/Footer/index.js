@@ -29,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-md-4">
-            <div className="signup-box py-3 my-3">
+            <div className="signup-box py-3 my-3" id="subscribe">
               <h4>Already 10,000+ ahead of you!</h4>
               <p>
                 Signup to stay up to date as we grow and generate more and more

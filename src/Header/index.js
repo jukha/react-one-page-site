@@ -7,14 +7,13 @@ import hamIcon from "../assets/ham-icon.svg";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 
 const Header = () => {
-  const scrollPosition = useScrollPosition();
-
-  console.log(scrollPosition);
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-light fixed-top">
       <div className="container-fluid fr-container justify-content-between align-items-center">
         <a className="navbar-brand">
-          <img src={logo} className="logo" alt="logo" />
+          <a href="#">
+            <img src={logo} className="logo" alt="logo" />
+          </a>
         </a>
         <button
           className="navbar-toggler"
@@ -31,7 +30,7 @@ const Header = () => {
           className="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav mb-2 mb-lg-0 align-items-center">
+          <ul className="navbar-nav mb-2 mb-lg-0 mt-lg-0 align-items-center">
             <li className="nav-item">
               <a className="nav-link" href="#home" aria-current="page">
                 Home
@@ -48,7 +47,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item text-center">
-              <a className="btn">Subscribe</a>
+              <a className="btn" href="#subscribe">Subscribe</a>
             </li>
           </ul>
         </div>
