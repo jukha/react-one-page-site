@@ -172,7 +172,8 @@ body {
 
 .gradient-text {
   /* background: -webkit-linear-gradient(to right, var(--gradient-1-clr, var(--gradient-2-clr))); */
-  background: linear-gradient(to right, var(--gradient-1-clr) 100%, var(--gradient-2-clr) 100%);
+  background: linear-gradient(90deg, #de5f28 60.33%, #1e1e2a 104.14%),
+    linear-gradient(0deg, #fff, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

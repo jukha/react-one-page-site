@@ -1,4 +1,6 @@
 import "./style.css";
+
+// Assets
 import PlayButton from "../assets/Play.svg";
 import AppStoreBtn from "../assets/app-store-btn.svg";
 import GooglePlayStoreBtn from "../assets/google-play-btn.svg";
@@ -9,7 +11,6 @@ import IphoneImg2 from "../assets/Iphone2.png";
 import IphoneImgSvg2 from "../assets/Iphone2.svg";
 import IphoneImg3 from "../assets/Iphone3.png";
 import IphoneImgSvg3 from "../assets/Iphone3.svg";
-
 import LeadGenerateImg from "../assets/lead-generate.png";
 import LeadGenerateSvg from "../assets/lead-generate.svg";
 import GlobeIcon from "../assets/globe-icon.svg";
@@ -23,6 +24,17 @@ import HowWorksIcon2 from "../assets/how-it-works-col-2.svg";
 import HowWorksIcon3 from "../assets/how-it-works-col-3.svg";
 import DiscoverImg from "../assets/discover.png";
 import DiscoverImgSvg from "../assets/discover.svg";
+
+import Slide2Img from "../assets/Netvrk.svg";
+import Slide3Img from "../assets/marketplace.svg";
+
+// Swiper JS
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
+import { EffectFade } from "swiper";
 
 const Home = () => {
   return (
@@ -116,7 +128,7 @@ const Home = () => {
             />
             <h2 className="section-header text-lg-start">
               From your
-              <span className="gradient-text">Fryends,</span>
+              <span className="gradient-text"> Fryends,</span>
             </h2>
             <p className="section-text text-lg-start">we generate leads</p>
             <div className="feature-img">
@@ -144,28 +156,80 @@ const Home = () => {
         </section>
 
         {/*================================
-         ====== Feature Section 04 ====== 
+         ====== Feature Section 04 (Slider) ====== 
          ================================ */}
-        <section className="fr-container mb-4 feature-section section-card position-relative d-lg-flex justify-content-between">
-          <img src={GlobeIcon} className="feature-icon" alt="globe icon" />
-          <div className="social-text">
-            <h2 className="section-header social-feature-header">
-              No <span className="gradient-text">connection</span> needed to any
-              of your social accounts...
-            </h2>
-            <p className="section-text text-center d-none d-lg-block">
-              You would really only need your most trusted fryends. likely no
-              more than about 50-70...
-            </p>
-          </div>
-          <div className="feature-img">
-            <img src={SocialIconGroup} />
-          </div>
-          <p className="section-text text-center d-block d-lg-none">
-            You would really only need your most trusted fryends. likely no more
-            than about 50-70...
-          </p>
-        </section>
+        {/* swiper start */}
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={50}
+          loop={true}
+          speed={1500}
+          autoplay={{ delay: 3000 }}
+          slidesPerView={1}
+        >
+          {/* 01 */}
+          <SwiperSlide>
+            <section className="fr-container mb-4 feature-section section-card position-relative d-lg-flex justify-content-between">
+              <div className="social-text">
+                <h2 className="section-header social-feature-header">
+                  No <span className="gradient-text">connection</span> needed to
+                  any of your social accounts...
+                </h2>
+                <p className="section-text text-center d-none d-lg-block">
+                  You would really only need your most trusted fryends. likely
+                  no more than about 50-70...
+                </p>
+              </div>
+              <div className="feature-img">
+                <img src={SocialIconGroup} />
+              </div>
+              <p className="section-text text-center d-block d-lg-none">
+                You would really only need your most trusted fryends. likely no
+                more than about 50-70...
+              </p>
+            </section>
+          </SwiperSlide>
+          {/* 02 */}
+          <SwiperSlide>
+            <section className="fr-container mb-4 feature-section section-card position-relative d-lg-flex justify-content-between ">
+              <div className="social-text">
+                <h2 className="section-header social-feature-header">
+                  You would<span className="gradient-text"> really only</span>{" "}
+                  need your most
+                  <span className="gradient-text"> trusted fryends.</span>
+                </h2>
+                <p className="section-text text-center d-none d-lg-block">
+                  We are not just any job marketplace not upwork, not fiverr,
+                  not thumbtack...
+                </p>
+              </div>
+              <div className="feature-img">
+                <img src={Slide2Img} />
+              </div>
+              <p className="section-text text-center d-block d-lg-none">
+                You would really only need your most trusted fryends. likely no
+                more than about 50-70...
+              </p>
+            </section>
+          </SwiperSlide>
+          {/* 03 */}
+          <SwiperSlide>
+            <section className="fr-container mb-4 feature-section section-card position-relative d-lg-flex justify-content-between ">
+              <div className="social-text">
+                <h2 className="section-header social-feature-header">
+                  We are not just any
+                  <span className="gradient-text"> job marketplace </span>
+                  not upwork, not fiverr, not thumbtack...
+                </h2>
+              </div>
+              <div className="feature-img">
+                <img src={Slide3Img} />
+              </div>
+            </section>
+          </SwiperSlide>
+        </Swiper>
+        {/* swiper end */}
+
         {/*================================
          ====== How it works Section ====== 
          ================================ */}

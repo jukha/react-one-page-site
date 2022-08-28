@@ -136,6 +136,10 @@
     line-height: 48px;
 }
 
+.swiper-slide .section-card {
+    min-height: 1046px;
+}
+
 /* ================================== */
 /* ====== How it works Section ====== */
 /* ================================== */
@@ -293,6 +297,10 @@
         max-width: max-content;
     }
 
+    .swiper-slide .section-card {
+        min-height: 674px;
+    }
+
     .section-header {
         font-size: 64px;
         line-height: 72px;
@@ -302,6 +310,10 @@
         font-size: 64px;
         line-height: 64px;
         margin: 10px 0 30px;
+    }
+
+    .social-feature-header {
+        max-width: 650px;
     }
 
     .feature-icon {
@@ -335,9 +347,7 @@
         width: 72%;
     }
 
-    .social-feature-header {
-        max-width: 650px;
-    }
+
 
     .social-text .section-text {
         max-width: 635px;
