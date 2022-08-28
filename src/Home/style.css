@@ -116,6 +116,10 @@
 
 }
 
+.side-img {
+    height: 110%;
+}
+
 .mobile-only {
     padding: 0 20px;
 }
@@ -387,5 +391,12 @@
 
     .accordion-button::before {
         top: -1px;
+    }
+}
+
+@media (min-width:1030px) {
+    .side-img {
+        height: 100%;
+        width: 90%;
     }
 }

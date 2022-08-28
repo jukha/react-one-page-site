@@ -26,6 +26,7 @@ import HowWorksIcon2 from "../assets/how-it-works-col-2.svg";
 import HowWorksIcon3 from "../assets/how-it-works-col-3.svg";
 import DiscoverImg from "../assets/discover.png";
 import DiscoverImgSvg from "../assets/discover.svg";
+import ArrowImg from "../assets/arrow.svg";
 
 import Slide2Img from "../assets/Netvrk.svg";
 import Slide3Img from "../assets/marketplace.svg";
@@ -85,8 +86,14 @@ const Home = () => {
             <p className="section-text">
               The best referrals are from word of mouth, we just automated them.
             </p>
-            <a className="feature-btn" href="#" target="_blank">
-              Subscribe
+            <a
+              className="feature-btn d-flex align-items-center"
+              style={{ gap: "25px" }}
+              href="#"
+              target="_blank"
+            >
+              Subscribe{" "}
+              <img height={"12px"} className="d-inline" src={ArrowImg} />
             </a>
           </div>
           <div className="feature-img clipped order-0 mt-lg-0 me-lg-5">
@@ -99,7 +106,7 @@ const Home = () => {
         <section className="fr-container mb-4 feature-section section-card position-relative d-lg-flex justify-content-between">
           <img src={ChatIcon} className="feature-icon" alt="globe icon" />
           <div className="feature-text me-lg-3">
-            <h2 className="section-header text-end text-md-start">
+            <h2 className="section-header text-end text-xl-start">
               Strong warm <br className="d-block d-sm-none" />
               <span className="gradient-text">introductions</span>
             </h2>
@@ -107,8 +114,8 @@ const Home = () => {
               via unique three-way chatrooms.
             </p>
           </div>
-          <div className="feature-img mt-lg-0">
-            <img src={IphoneImgSvg2} className="m-auto" />
+          <div className="feature-img mt-lg-0 flex-grow-1">
+            <img src={IphoneImgSvg2} className="m-auto h-100" />
           </div>
         </section>
         <div className="mobile-only mb-4 d-block d-lg-none">
@@ -140,11 +147,14 @@ const Home = () => {
           {/*==============================================
          ====== Section with Gradient Background ====== 
          ============================================== */}
-          <section className="desktop-only mb-4">
-            <div className="mb-4 d-none d-lg-block">
-              <div className="fr-container section-card p-0">
-                <div className="feature-img mt-4">
-                  <img src={IphoneImgSvg3} className="m-auto m" />
+          <section className="desktop-only mb-4 d-flex flex-column justify-content-between">
+            <div className="mb-4 d-none d-lg-block flex-grow-1 mb-5">
+              <div
+                className="fr-container section-card pt-0 h-100"
+                style={{ paddingLeft: "50px", paddingRight: "50px" }}
+              >
+                <div className="feature-img mt-4 h-100">
+                  <img src={IphoneImgSvg3} className="m-auto side-img" />
                 </div>
               </div>
             </div>
@@ -162,12 +172,16 @@ const Home = () => {
          ================================ */}
         {/* swiper start */}
         <Swiper
-          modules={[Autoplay]}
+          modules={[EffectFade]}
           spaceBetween={50}
-          loop={true}
+          // loop={true}
           speed={1500}
-          autoplay={{ delay: 3000 }}
-          slidesPerView={1}
+          // autoplay={{ delay: 3000 }}
+          slidesPerView={"auto"}
+          mousewheel={true}
+          freeMode={{
+            enabled: true,
+          }}
         >
           {/* 01 */}
           <SwiperSlide>
