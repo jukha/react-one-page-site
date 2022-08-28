@@ -23,6 +23,10 @@ footer {
     color: rgba(0, 0, 0, 0.7);
 }
 
+.footer-tagline span {
+    text-decoration: underline;
+}
+
 .signup-box h4 {
     font-family: 'Metropolis-Bold';
     font-style: normal;
@@ -108,6 +112,11 @@ footer {
 
     .signup-box h4,
     .signup-box p {
+        text-align: start;
+    }
+
+    .footer-tagline {
+        max-width: 460px;
         text-align: start;
     }
 }

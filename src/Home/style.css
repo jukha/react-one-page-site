@@ -361,4 +361,8 @@
     .faq-section .accordion-body {
         max-width: 800px;
     }
+
+    .accordion-button::before {
+        top: -1px;
+    }
 }

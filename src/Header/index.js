@@ -4,8 +4,12 @@ import "../App.css";
 import logo from "../assets/Logo.svg";
 import hamIcon from "../assets/ham-icon.svg";
 
+import { useScrollPosition } from "../hooks/useScrollPosition";
 
 const Header = () => {
+  const scrollPosition = useScrollPosition();
+
+  console.log(scrollPosition);
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid fr-container justify-content-between align-items-center">
@@ -29,15 +33,19 @@ const Header = () => {
         >
           <ul className="navbar-nav mb-2 mb-lg-0 align-items-center">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page">
+              <a className="nav-link" href="#home" aria-current="page">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link">The Tech</a>
+              <a className="nav-link" href="#the-tech">
+                The Tech
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link">Contact</a>
+              <a className="nav-link" href="#contact">
+                Contact
+              </a>
             </li>
             <li className="nav-item text-center">
               <a className="btn">Subscribe</a>

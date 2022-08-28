@@ -8,13 +8,14 @@ import YtIcon from "../assets/youtube.svg";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="fr-container px-sm-0">
+    <footer className="position-relative" data-bs-spy="scroll">
+      <div className="fr-container px-sm-0" id="contact">
         <div className="row justify-content-between">
           <div className="col-md-6 d-flex flex-column align-items-center align-items-lg-start">
             <img src={logo} className="logo" alt="logo" />
             <p className="my-4 footer-tagline">
-              The best referrals are from "Word of Mouth.” We automated it!
+              The best referrals are from "Word of Mouth.” We{" "}
+              <span>automated</span> it!
             </p>
             <div className="social-links">
               <img src={FbIcon} alt="facebook icon" />
