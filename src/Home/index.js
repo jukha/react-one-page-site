@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import "./style.css";
-
 import Footer from "../Footer";
 
 // Assets
@@ -39,7 +39,16 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import { EffectFade } from "swiper";
 
+// Bootstrap Modal
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+
 const Home = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <section className="home position-relative" data-bs-spy="scroll">
       {/*==========================
@@ -51,7 +60,12 @@ const Home = () => {
           Automate <span>Referrals</span>
         </h1>
         <div className="text-center">
-          <a className="cta">
+          <a
+            className="cta"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+          >
             <img src={PlayButton} className="mb-3" />
             See how
           </a>
@@ -255,8 +269,14 @@ const Home = () => {
           </h2>
           <div className="how-it-works__banner position-relative">
             <div className="overlay"></div>
-            <div className="content position-relative">
-              <img src={HowWorksPlay} className="m-auto" />
+            <div className="content position-relative text-center">
+              <a
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                <img src={HowWorksPlay} className="m-auto" />
+              </a>
               <h3 className="text">
                 The best referrals <span>are</span> word of mouth.
               </h3>
@@ -425,6 +445,65 @@ const Home = () => {
         </section>
       </div>
       <Footer />
+      {/* Modal 1 */}
+      <div
+        className="modal fade"
+        id="exampleModal1"
+        tabIndex="-1"
+        aria-labelledby="exampleModalLabel1"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div className="modal-body">
+              <iframe
+                width="916"
+                height="515"
+                src="https://www.youtube.com/embed/pJuqZeSwNtI"
+                title="SLOW MOTION / CINEMATIC BACKGROUND MUSIC"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal 2 */}
+      <div
+        className="modal fade"
+        id="exampleModal2"
+        tabIndex="-1"
+        aria-labelledby="exampleModalLabel2"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div className="modal-body">
+              <iframe
+                width="916"
+                height="515"
+                src="https://www.youtube.com/embed/pJuqZeSwNtI"
+                title="SLOW MOTION / CINEMATIC BACKGROUND MUSIC"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

@@ -43,7 +43,11 @@ const Footer = () => {
                   className="border-0"
                   placeholder="Email Address"
                 />
-                <input type="submit" className="btn" value="Subscribe" />
+                <input
+                  type="submit"
+                  className="button border-0"
+                  value="Subscribe"
+                />
               </div>
             </form>
             <p className="copyright cr-mobile d-block d-lg-none">

@@ -10,7 +10,7 @@
     /* position: sticky;
     top: -1px; */
     background-color: #fdf7f5 !important;
-    z-index: 99999;
+    z-index: 88888;
     padding: 20px 0;
 }
 
@@ -44,10 +44,30 @@
     font-weight: 800 !important;
 }
 
+.modal {
+    z-index: 99999;
+    /* display: flex;
+    align-items: center; */
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.btn-close {
+    align-self: end;
+    padding: 30px 35px 0 0;
+}
+
 /* .active:not(.button){
     color: #fff;
 } */
- @media (min-width:768px) {
+@media (min-width:768px) {
     .navbar {
         /* margin-top: 34px; */
         padding: 34px 0;
