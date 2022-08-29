@@ -37,18 +37,15 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-import { EffectFade } from "swiper";
+import "swiper/css/effect-cards";
+import "swiper/css/mousewheel";
+import { EffectFade, EffectCards, Mousewheel } from "swiper";
 
 // Bootstrap Modal
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const Home = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
     <section className="home position-relative" data-bs-spy="scroll">
       {/*==========================
@@ -186,15 +183,29 @@ const Home = () => {
          ================================ */}
         {/* swiper start */}
         <Swiper
-          modules={[EffectFade]}
+          modules={[EffectFade, Mousewheel]}
           spaceBetween={50}
-          // loop={true}
-          speed={1500}
-          // autoplay={{ delay: 3000 }}
+          direction={"horizontal"}
+          speed={1000}
+          effect={"fade"}
           slidesPerView={"auto"}
-          mousewheel={true}
-          freeMode={{
-            enabled: true,
+          mousewheel={{
+            releaseOnEdges: true,
+          }}
+          onSlideChange={(swiper) => {
+            setTimeout(() => {
+              swiper.params.mousewheel.releaseOnEdges = false;
+            }, 500);
+          }}
+          onReachBeginning={(swiper) => {
+            setTimeout(() => {
+              swiper.params.mousewheel.releaseOnEdges = true;
+            }, 750);
+          }}
+          onReachEnd={(swiper) => {
+            setTimeout(() => {
+              swiper.params.mousewheel.releaseOnEdges = true;
+            }, 750);
           }}
         >
           {/* 01 */}
@@ -456,12 +467,12 @@ const Home = () => {
         <div className="modal-dialog modal-lg modal-dialog-centered ">
           <div className="modal-content">
             <div className="modal-header">
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div className="modal-body">
               <iframe
@@ -488,12 +499,12 @@ const Home = () => {
         <div className="modal-dialog modal-lg modal-dialog-centered ">
           <div className="modal-content">
             <div className="modal-header">
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div className="modal-body">
               <iframe

@@ -72,11 +72,6 @@
     color: #fff;
 } */
 @media (min-width:768px) {
-    .navbar {
-        /* margin-top: 34px; */
-        padding: 34px 0;
-    }
-
     .logo {
         max-width: max-content;
     }
