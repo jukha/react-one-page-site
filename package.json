@@ -2,6 +2,7 @@
   "name": "fryends-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jukha.github.io/react-one-page-site/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -23,6 +24,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [
